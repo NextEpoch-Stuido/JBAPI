@@ -93,5 +93,3 @@ player.AddEffects(EffectType.Scp207, 10); //给予指定玩家Scp207的效果持
 * mint
 * army_green
 * pumpkin
-##
-yee，有问题加孩子QQ：2033200993，孩子不会用Github
