@@ -28,7 +28,7 @@ namespace JBAPI.Tag
         /// <param name="文本"></param>
         /// <param name="频率"></param>
         /// <param name="是否启用"></param>
-        public static void RTag(this Player 玩家, string 文本, long 频率, bool 是否启用)
+        public static void RTag(this Player 玩家, string 文本, int 频率, bool 是否启用)
         {
             Timing.CallContinuously(2f, () =>
             {
