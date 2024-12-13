@@ -3,7 +3,7 @@
 
 ## 介绍
   JBAPI是一基于Exiled开发的库，它提供了很多实用方法以供开发者实用，比如Hint，称号，日志。这些功能十分强大，可以让您实现更多的有趣的功能！
-  在这里查看JBAPI的API文档
+  在这里查看JBAPI的API[文档](https://github.com/Carl-Frellett/JBAPI/blob/main/How%20to%20use%20JBAPI.md)
 
 ## 使用
 ### 对于服主
