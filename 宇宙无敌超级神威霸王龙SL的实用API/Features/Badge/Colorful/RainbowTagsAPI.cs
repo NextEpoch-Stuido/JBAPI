@@ -1,4 +1,4 @@
-﻿namespace JBAPI.Features.Badge.Colorful
+﻿namespace JBAPI.Features.Badge
 {
     using Exiled.API.Features;
     using JBAPI.Features.UnityScript;
