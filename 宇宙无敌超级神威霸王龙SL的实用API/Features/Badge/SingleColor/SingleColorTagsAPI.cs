@@ -1,4 +1,4 @@
-﻿namespace JBAPI.Features.Badge.SingleColor
+﻿namespace JBAPI.Features.Badge
 {
     using Exiled.API.Features;
 
