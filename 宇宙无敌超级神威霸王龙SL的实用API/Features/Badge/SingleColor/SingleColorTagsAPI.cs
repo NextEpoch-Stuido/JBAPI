@@ -1,25 +1,32 @@
-﻿namespace JBAPI.Features.Badge
+﻿// -----------------------------------------------------------------------
+// <copyright file="SingleColorTagsAPI.cs" company="JBAPI-Team">
+// Copyright (c) JBAPI-Team. All rights reserved.
+// Licensed under the CC BY-SA 3.0 license.
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace JBAPI.Features.Badge
 {
     using Exiled.API.Features;
 
     /// <summary>
-    /// 单色称号
+    /// 单色称号.
     /// </summary>
     public static class SingleColorTagsAPI
     {
         /// <summary>
-        /// 单色称号启用方法
+        /// 单色称号启用方法.
         /// </summary>
-        /// <param name="PLAYER"></param>
-        /// <param name="COLOR"></param>
-        /// <param name="TEXT"></param>
-        /// <param name="ISCOVER"></param>
-        public static void Tags(this Player PLAYER, string COLOR, string TEXT,bool ISCOVER = true)
+        /// <param name="pLAYER">给予彩称的玩家.</param>
+        /// <param name="cOLOR">称号颜色.</param>
+        /// <param name="tEXT">称号文本.</param>
+        /// <param name="iSCOVER">是否覆盖.</param>
+        public static void Tags(this Player pLAYER, string cOLOR, string tEXT, bool iSCOVER = true)
         {
-            if (ISCOVER == true)
+            if (iSCOVER == true)
             {
-                PLAYER.RankName = TEXT;
-                PLAYER.RankColor = COLOR;
+                pLAYER.RankName = tEXT;
+                pLAYER.RankColor = cOLOR;
             }
         }
     }

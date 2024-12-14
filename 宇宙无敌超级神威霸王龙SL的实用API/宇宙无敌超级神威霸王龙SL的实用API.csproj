@@ -38,6 +38,7 @@
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\x64\Debug\宇宙无敌超级神威霸王龙SL的实用API.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutputPath>bin\x64\Release\</OutputPath>
@@ -126,19 +127,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Features\Badge\Colorful\RainbowTagsAPI.cs" />
-    <Compile Include="Features\Badge\Colorful\UnityScript.cs" />
+    <Compile Include="Features\Badge\Colorful\TagController.cs" />
     <Compile Include="Features\Badge\SingleColor\SingleColorTagsAPI.cs" />
-    <Compile Include="Features\Log\Game.cs" />
-    <Compile Include="Features\Log\Server.cs" />
-    <Compile Include="Features\Ruel.Hint\DeleteRuelHint.cs" />
-    <Compile Include="Features\Ruel.Hint\PosRuelHint.cs" />
-    <Compile Include="Features\Ruel.Hint\PrmanentDisplayRuelHint.cs" />
-    <Compile Include="Features\Ruel.Hint\RuelHint.cs" />
+    <Compile Include="Features\Log\GameLog.cs" />
+    <Compile Include="Features\Log\ServerLog.cs" />
+    <Compile Include="Features\RandomRolePlayer.cs" />
+    <Compile Include="Features\Ruel.Hint\Delete_RuelHint.cs" />
+    <Compile Include="Features\Ruel.Hint\DownPosition_RuelHint.cs" />
+    <Compile Include="Features\Ruel.Hint\PrmanentDisplay_RuelHint.cs" />
+    <Compile Include="Features\Ruel.Hint\Ruel_Hint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <None Include="packages.config" />
+    <AdditionalFiles Include="stylecop.json" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
