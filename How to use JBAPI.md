@@ -40,19 +40,18 @@ player.DeleteRuelHint();
 特点：移除指定玩家的Hint
 参数：无
 
-### 称号
+## 称号
 本API提供了两种称号，分别为彩称，单色称号，他们的使用方法十分的简单
 
-### 彩称
+### 彩色称号
 ``` csharp
 using JBAPI.Features.Badg;
 
-player.RTag("宇宙无敌超级神威霸王龙",0.5f,true);
+player.RainbowTag("宇宙无敌超级神威霸王龙",0.5f,true);
 ```
 特点：不断变换称号的颜色，彰显您无与伦比的尊贵
 参数：称号文本，颜色变换频率, 是否启用（如果不启用则默认为红色）
 
-## 称号API
 ### 单色称号
 ``` csharp
 using JBAPI.Features.Badge;
@@ -95,3 +94,4 @@ ServerLog.CustomLog("这是一条用于测试用的日志", System.ConsoleColor.
 * mint
 * army_green
 * pumpkin
+--------------------
