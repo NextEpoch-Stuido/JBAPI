@@ -65,11 +65,24 @@ player.Tags("宇宙无敌超级神威霸王龙","cyam",true);
 ### 服务器日志
 JBAPI提供了***4***种服务器日志，这里使用默认日志与自定义日志为例子，另外两个日志相同性质
 ``` csharp
-using JJBAPI.Features.Log;
+using JBAPI.Features.Log;
 
 ServerLog.AddLog("这是一条用于测试用的日志"); // 默认日志  他会输出一条淡蓝色的日志
 ServerLog.CustomLog("这是一条用于测试用的日志", System.ConsoleColor.Red); // 自定义颜色日志  他会输出一条指定颜色（示例为红色）的日志
 ```
+
+## 角色
+### 随机选取指定角色的玩家
+该功能适用于使用事件实现的自定义角色，该方法帮您选取玩家！
+``` csharp
+using JBAPI.Features.CustomRole;
+using Exiled.API.Features;
+
+public Player ply;
+var ply = RandomRolePlayer.RandomSelectPlayer(RoleTypeId.ClassD, new List<string> { "SCP181", "SCP457" }, true); // 随机选取角色为D级人员的玩家，同时跳过称号为SCP181和SCP457的玩家，允许发送日志
+```
+特点：随机选取一名玩家
+参数：选取什么角色的玩家，跳过称号中带有什么的玩家，是否启用日志
 
 ***称号可用颜色:***
 * pink
