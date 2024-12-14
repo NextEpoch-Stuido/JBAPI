@@ -83,6 +83,7 @@ var ply = RandomRolePlayer.RandomSelectPlayer(RoleTypeId.ClassD, new List<string
 ```
 特点：随机选取一名玩家
 参数：选取什么角色的玩家，跳过称号中带有什么的玩家，是否启用日志
+您还可以查看如何创建一个[事件角色](https://github.com/Carl-Frellett/JBAPI/blob/main/%E4%BA%8B%E4%BB%B6%E8%A7%92%E8%89%B2%E4%BE%8B%E5%AD%90.cs)的例子(SCP181)
 
 ***称号可用颜色:***
 * pink
