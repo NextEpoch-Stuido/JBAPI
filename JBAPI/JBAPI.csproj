@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Events\Args\" />
+    <Folder Include="Events\Handler\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Assembly-CSharp-Editor.csproj" />
+    <ProjectReference Include="..\Assembly-CSharp-firstpass.csproj" />
+    <ProjectReference Include="..\Assembly-CSharp.csproj" />
+    <ProjectReference Include="..\Steamworks.net.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\EncryptionTransportEditor.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\kcp2k.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\Mirror.Authenticators.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\Mirror.Components.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\Mirror.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\Mirror.Editor.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\Mirror.Transports.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\NaughtyAttributes.Editor.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\Steamworks.net.Editor.csproj" />
+    <ProjectReference Include="C:\Unity\Unity Project\SiteWinter\Unity.Mirror.CodeGen.csproj" />
+  </ItemGroup>
+
+</Project>
