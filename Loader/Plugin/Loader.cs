@@ -1,6 +1,7 @@
-﻿using JBAPI.API.Config;
+using JBAPI.API.Config;
 using JBAPI.API.Features;
 using JBAPI.API.Plugin;
+using JBAPI.Events;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -47,10 +48,11 @@ namespace JBAPI.Loader.Plugin
         }
 
         /// <summary>
-        /// 启用插件
+        /// 启用插件与事件中心
         /// </summary>
         public static void EnablePlugins()
         {
+            EventLoader.RegEvents();
             foreach (IPlugin plugin in Plugins)
             {
                 try
@@ -206,10 +208,11 @@ namespace JBAPI.Loader.Plugin
         }
 
         /// <summary>
-        /// 禁用插件
+        /// 禁用插件与事件中心
         /// </summary>
         public static void DisablePlugins()
         {
+            EventLoader.UnregEvents();
             foreach (IPlugin plugin in Plugins)
             {
                 try
