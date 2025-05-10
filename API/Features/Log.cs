@@ -94,5 +94,13 @@ namespace JBAPI.API.Features
             }
             logger.Log(message, ConsoleColor.DarkRed);
         }
+        public static void AddWarningLog(object message)
+        {
+            if (logger == null)
+            {
+                throw new Exception("日志器未初始化");
+            }
+            logger.Log(message, ConsoleColor.DarkYellow);
+        }
     }
 }
